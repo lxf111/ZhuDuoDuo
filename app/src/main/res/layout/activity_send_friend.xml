@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_lift_title" />
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/et_write_bg"
+        android:drawableLeft="@mipmap/home_search"
+        android:drawablePadding="10dp"
+        android:gravity="top"
+        android:hint="请输入好友ID"
+        android:singleLine="true"
+        android:padding="8dp"
+        android:imeOptions="actionSearch"
+        android:textColor="@color/tv_51"
+        android:textCursorDrawable="@drawable/et_cursor_bg"
+        android:textSize="14sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_header"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/ic_launcher"
+                app:civ_border_color="@color/theme"
+                app:civ_border_width="0.5dp" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="名字"
+                android:textColor="@color/tv_26"
+                android:textSize="@dimen/home_name" />
+
+            <ImageView
+                android:id="@+id/iv_img"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/tv_cancel"
+                    android:paddingBottom="1dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="1dp"
+                    android:text="500ml"
+                    android:textColor="@color/tv_51"
+                    android:textSize="@dimen/home_content" />
+
+                <TextView
+                    android:id="@+id/tv_700"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/my_order_bg"
+                    android:paddingBottom="1dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="1dp"
+                    android:text="700ml"
+                    android:textColor="@color/theme"
+                    android:textSize="@dimen/home_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="提示：对方超过五天未接收或者拒绝收酒\n水都将退回酒庄中"
+                android:textColor="@color/theme"
+                android:textSize="@dimen/home_content" />
+
+            <TextView
+                android:id="@+id/tv_go_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/tv_theme"
+                android:paddingBottom="3dp"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp"
+                android:paddingTop="3dp"
+                android:text="立即购买"
+                android:textColor="@color/white"
+                android:textSize="@dimen/home_title" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

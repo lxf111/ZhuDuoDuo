@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lxf.zhuduoduo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- for union pay -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature android:name="android.hardware.nfc.hce" />
+
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".base.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--登录-->
+
+        <activity
+            android:name=".ui.login.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <!--注册-->
+
+        <activity
+            android:name=".ui.home.activity.FreeActivity"
+            android:screenOrientation="portrait" />
+        <!--免费领取-->
+
+        <activity
+            android:name=".ui.home.activity.ToastActivity"
+            android:screenOrientation="portrait" />
+        <!--敬酒-->
+
+        <activity
+            android:name=".ui.home.activity.SendFriendActivity"
+            android:screenOrientation="portrait" />
+        <!--送好友-->
+        <activity
+            android:name=".ui.home.activity.AppointActivity"
+            android:screenOrientation="portrait" />
+        <!--一分预约-->
+
+        <activity
+            android:name=".ui.home.activity.DetailActivity"
+            android:screenOrientation="portrait" />
+        <!--详情页-->
+        <activity
+            android:name=".ui.home.activity.DiscountActivity"
+            android:screenOrientation="portrait" />
+        <!--优惠券-->
+        <activity
+            android:name=".ui.home.activity.FallowActivity"
+            android:screenOrientation="portrait" />
+        <!--休闲-->
+        <activity
+            android:name=".ui.home.activity.HallActivity"
+            android:screenOrientation="portrait" />
+        <!--积分商城-->
+        <activity
+            android:name=".ui.home.activity.LimitActivity"
+            android:screenOrientation="portrait" />
+        <!--限量定制-->
+        <activity
+            android:name=".ui.home.activity.SignupActivity"
+            android:screenOrientation="portrait" />
+        <!--签到-->
+        <activity
+            android:name=".ui.alcohol.activity.WineCallerActivity"
+            android:screenOrientation="portrait" />
+        <!--酒库-->
+        <activity
+            android:name=".ui.alcohol.activity.WineryActivity"
+            android:screenOrientation="portrait" />
+        <!--酒庄-->
+        <activity
+            android:name=".ui.alcohol.activity.WinActivity"
+            android:screenOrientation="portrait" />
+        <!--战果-->
+        <activity
+            android:name=".ui.order.CarActivity"
+            android:screenOrientation="portrait" />
+        <!--购物车-->
+        <activity
+            android:name=".ui.find.activity.FriendActivity"
+            android:screenOrientation="portrait" />
+        <!--好友列表-->
+
+        <!--我的-->
+        <activity
+            android:name=".ui.my.activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <!--设置-->
+        <activity
+            android:name=".ui.my.activity.AddressActivity"
+            android:screenOrientation="portrait" />
+        <!--地址管理-->
+        <activity
+            android:name=".ui.my.activity.AddAddressActivity"
+            android:screenOrientation="portrait" />
+        <!--添加地址-->
+        <activity
+            android:name=".ui.my.activity.BankActivity"
+            android:screenOrientation="portrait" />
+        <!--银行卡管理-->
+        <activity
+            android:name=".ui.my.activity.AddBankActivity"
+            android:screenOrientation="portrait" />
+        <!--添加银行卡-->
+        <activity
+            android:name=".ui.order.OrderActivity"
+            android:screenOrientation="portrait" />
+        <!--订单-->
+        <activity
+            android:name=".ui.order.OrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <!--订单详情-->
+        <activity
+            android:name=".ui.my.activity.PersonHallActivity"
+            android:screenOrientation="portrait" />
+        <!--个人商城-->
+
+
+        <!--友盟-->
+        <!--微信-->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--QQ-->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1106866447" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--beecolud-->
+        <activity
+            android:name="cn.beecloud.BCMockPayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="cn.beecloud.BCWechatPaymentActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity-alias
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:targetActivity="cn.beecloud.BCWechatPaymentActivity" />
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!--///////////////////////////////////百度地图\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="E0gBTxAO9aQAOE5tZCpwxdZstpOVhvr7" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+
+        <!--融云-->
+        <!--融云-->
+        <meta-data
+            android:name="RONG_CLOUD_APP_KEY"
+            android:value="25wehl3u2s8aw" />
+
+        <!--会话列表-->
+        <activity
+            android:name=".ui.im.ConversationListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.lxkj.runproject"
+                    android:pathPrefix="/conversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <!--聚合会话列表-->
+        <activity
+            android:name=".ui.im.SubConversationListActivtiy"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.lxkj.runproject"
+                    android:pathPrefix="/subconversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <!--会话界面-->
+        <activity
+            android:name=".ui.im.ConversationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.lxkj.runproject"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

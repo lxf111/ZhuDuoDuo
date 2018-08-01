@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:background="@drawable/tv_cancel"
+        android:orientation="horizontal"
+        android:paddingBottom="25dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="25dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_header"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_header"
+            android:paddingLeft="10dp"
+            android:text="名字"
+            android:textColor="@color/tv_26"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_alcohol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/tv_theme"
+            android:paddingBottom="3dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="3dp"
+            android:text="他的酒库"
+            android:textColor="@color/white"
+            android:textSize="@dimen/home_title" />
+    </RelativeLayout>
+
+</RelativeLayout>

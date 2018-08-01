@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="home_title">15sp</dimen>
+
+    <dimen name="home_content">13sp</dimen>
+
+    <dimen name="home_name">14sp</dimen>
+
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:src="@mipmap/ic_back" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/iv_back"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="注多多"
+        android:textColor="@color/tv_26"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="有标题"
+        android:textColor="@color/tv_26"
+        android:textSize="15sp"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="发现"
+            android:textColor="@color/tv_26"
+            android:textSize="@dimen/home_title" />
+
+
+        <ImageView
+            android:id="@+id/iv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:src="@mipmap/friend_list" />
+
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iv_message"
+            android:layout_toRightOf="@id/iv_logo"
+            android:background="@drawable/et_write_bg"
+            android:drawableLeft="@mipmap/home_search"
+            android:drawablePadding="10dp"
+            android:gravity="top"
+            android:hint="输入您要搜索的..."
+            android:padding="10dp"
+            android:textColor="@color/tv_51"
+            android:textCursorDrawable="@drawable/et_cursor_bg"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:clickable="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_sell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:text="正在出售"
+                    android:textColor="@color/tv_26"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="15dp"
+                    android:background="@color/theme" />
+
+                <TextView
+                    android:id="@+id/tv_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="消息列表"
+                    android:textColor="@color/tv_26"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/bg_color" />
+
+
+            <com.lxf.zhuduoduo.view.MyRecyclerView
+                android:id="@+id/rv_find"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp">
+
+            </com.lxf.zhuduoduo.view.MyRecyclerView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

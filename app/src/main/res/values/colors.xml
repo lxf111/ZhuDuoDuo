@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d81719</color>
+    <color name="colorPrimaryDark">#d81719</color>
+    <color name="colorAccent">#d81719</color>
+    <color name="theme">#d81719</color>
+
+    <color name="lv">#0fb4f4</color>
+
+    <!--背景色-->
+    <color name="bg_color">#f6f6f6</color>
+    <!--前景色-->
+    <color name="white">#FFFFFF</color>
+    <!--标题栏颜色-->
+    <color name="title_bg">#42B4B4</color>
+
+    <!--下滑线颜色-->
+    <color name="view_line">#E6E6E6</color>
+
+
+    <color name="tv_153">#999999</color>
+    <color name="tv_102">#666666</color>
+    <color name="tv_51">#333333</color>
+    <color name="tv_26">#1a1a1a</color>
+    <color name="tv_40">#282828</color>
+
+    <color name="word_title">#ff9a13</color>
+
+    <!--灰色字体-->
+    <color name="gray">#a3a4c0</color>
+
+    <!--红色-->
+    <color name="rob_red">#ee2c2c</color>
+    <color name="process_color">#fe99ae</color>
+    <!--蓝色-->
+    <color name="rob_price">#0fb4f4</color>
+
+    <!--已完成-->
+    <color name="order_complete">#fe6700</color>
+    <!--待评价-->
+    <color name="order_evaluate">#0fb4f4</color>
+    <!--待评价-->
+    <color name="order_overdue">#4c4c4c</color>
+    <!--待使用-->
+    <color name="order_use">#fe4838</color>
+
+    <color name="business_bg">#3e4454</color>
+
+    <color name="bg_gray3">#CCCCCC</color>
+
+
+    <color name="home_title">#7b7171</color>
+
+    <color name="content_color">#9f898a</color>
+
+
+    <color name="dynamic_name">#957f80</color>
+
+    <color name="view_red_line">#e56e5f</color>
+
+</resources>

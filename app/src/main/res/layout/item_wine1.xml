@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/tv_confirm">
+
+        <TextView
+            android:id="@+id/tv_sale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/tv_theme"
+            android:paddingBottom="3dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="3dp"
+            android:text="出售"
+            android:textColor="@color/white"
+            android:textSize="@dimen/home_title" />
+
+        <TextView
+            android:id="@+id/tv_give"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/tv_sale"
+            android:background="@drawable/tv_theme"
+            android:paddingBottom="3dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="3dp"
+            android:text="赠送"
+            android:textColor="@color/white"
+            android:textSize="@dimen/home_title" />
+
+        <TextView
+            android:id="@+id/tv_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/tv_give"
+            android:background="@drawable/tv_theme"
+            android:paddingBottom="3dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="3dp"
+            android:text="分享"
+            android:textColor="@color/white"
+            android:textSize="@dimen/home_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:background="@mipmap/ic_new"
+            android:gravity="center_horizontal"
+            android:text="新"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="3dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_share"
+            android:background="@color/theme" />
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/view_line"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/view_line"
+            android:text="750ml"
+            android:textColor="@color/theme"
+            android:textSize="11sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="80dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher" />
+
+</RelativeLayout>
