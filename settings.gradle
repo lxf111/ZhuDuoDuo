@@ -1,0 +1,1 @@
+include ':app', ':okhttputils', ':sdk', ':xrecyclerview', ':IMKit', ':IMLib', ':picture_library', ':ucrop', ':standardadapter', ':libs'
